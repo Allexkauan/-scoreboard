@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:altotech/home_page.dart';
+import 'package:teste/home_page.dart';
 
 main() => runApp(const QuizApp());
 
