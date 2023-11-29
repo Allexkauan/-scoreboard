@@ -19,7 +19,11 @@ class _PlacarState extends State<Placar> {
 
   void _decrementA() {
     setState(() {
-      _teamA = _teamA - 1;
+      if (_teamA == 0) {
+        _teamA = 0;
+      } else {
+        _teamA = _teamA - 1;
+      }
     });
   }
 
@@ -38,7 +42,11 @@ class _PlacarState extends State<Placar> {
 
   void _decrementB() {
     setState(() {
-      _teamB = _teamB - 1;
+      if (_teamB == 0) {
+        _teamB = 0;
+      } else {
+        _teamB = _teamB - 1;
+      }
     });
   }
 
